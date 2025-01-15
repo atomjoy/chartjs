@@ -19,10 +19,14 @@
                 // or the size of the chart has changed
                 width = chartWidth;
                 height = chartHeight;
+                // Vertically
                 gradient = ctx.createLinearGradient(0, chartArea.bottom, 0, chartArea.top);
+                // Horizontally
+                gradient = ctx.createLinearGradient(chartArea.right, chartArea.top, chartArea.left, chartArea.top);
+                // Colors
                 gradient.addColorStop(0, '#f20')
                 gradient.addColorStop(0.5, '#ff0')
-                gradient.addColorStop(1, '#09f')
+                gradient.addColorStop(1, '#5c5')
             }
 
             return gradient;
@@ -46,7 +50,7 @@
                     labels: ['Jan', 'April', 'March', 'August', 'October', 'December'],
                     datasets: [{
                         label: 'Year 2025',
-                        data: [5, 2, 9, 3, 0, 6],
+                        data: [5, 2, 9, 3, 1, 15],
                         tension: 0.3,
                         borderWidth: 5,
                         borderColor: function (context) {
@@ -79,7 +83,7 @@
                         },
                     }, {
                         label: 'Year 2024',
-                        data: [6, 11, 3, 5, 2, 13],
+                        data: [6, 11, 3, 5, 2, 5],
                         tension: 0.3,
                         borderWidth: 2,
                         borderColor: '#0099ff',
