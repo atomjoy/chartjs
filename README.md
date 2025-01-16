@@ -56,6 +56,14 @@ const chart = new Chart(ctx, {
     datasets: [{
       data: [10, 20, 30],
       backgroundColor: createDiagonalPattern('#09f'),
+      fill: true,
+      tension: 0.3,
+      borderWidth: 2,
+      borderColor: '#09f',
+      backgroundColor: '#09f1',
+      pointStyle: 'circle',
+      pointRadius: 5,
+      pointHoverRadius: 10,
     }]
   }
 });
