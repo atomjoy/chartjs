@@ -12,3 +12,4 @@ Chart.js line chart example with gradients and animations.
 - https://www.youtube.com/watch?v=DnjlLbOsPlM
 - https://www.youtube.com/watch?v=AEaXyzCElGI
 - https://www.youtube.com/watch?v=vmp3czGfw2U
+- https://www.youtube.com/watch?v=EVHi41f7psQ
