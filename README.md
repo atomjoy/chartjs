@@ -62,7 +62,8 @@ const chart = new Chart(ctx, {
 ```
 
 ## Links
-- https://www.chartjs.org/docs/latest/
+- https://www.chartjs.org/docs/latest
+- https://www.chartjs.org/docs/latest/general/data-structures.html
 - https://www.chartjs.org/docs/latest/general/colors.html#patterns-and-gradients
 - https://www.chartjs3.com/docs/chart/getting-started
 - https://www.youtube.com/watch?v=DnjlLbOsPlM
