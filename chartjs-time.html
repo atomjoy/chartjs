@@ -33,6 +33,23 @@
             return gradient;
         }
 
+        function createDiagonalPattern(color = 'black') {
+            let shape = document.createElement('canvas')
+            shape.width = 10
+            shape.height = 10
+            let c = shape.getContext('2d')
+            c.strokeStyle = color
+            c.beginPath()
+            c.moveTo(2, 0)
+            c.lineTo(10, 8)
+            c.stroke()
+            c.beginPath()
+            c.moveTo(0, 8)
+            c.lineTo(2, 10)
+            c.stroke()
+            return c.createPattern(shape, 'repeat')
+        }
+
         window.onload = () => {
             // const labels = Utils.months({ count: DATA_COUNT });
             const ctx = document.getElementById('myChart');
@@ -118,11 +135,21 @@
                         pointHoverRadius: 10,
                         fill: true,
                         backgroundColor: gradient1,
+                        backgroundColor: createDiagonalPattern('#09f'),
+                        parsing: {
+                            // yAxisKey: 'nested.value'
+                        }
                     }
                     ]
                 },
                 options: {
                     responsive: true,
+                    parsing: {
+                        // Parse data array
+                        // xAxisKey: 'id',
+                        // yAxisKey: 'nested.value',
+                        // key: 'nested.value'
+                    },
                     scales: {
                         y: {
                             beginAtZero: true,
@@ -143,7 +170,7 @@
                             }
                         },
                         x: {
-                            type: 'time',
+                            type: 'timeseries',
                             time: {
                                 unit: 'day',
                                 tooltipFormat: 'dd-MM-yyyy HH:mm:ss',
