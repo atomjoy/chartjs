@@ -145,6 +145,7 @@ Chart.js line chart example with gradients and animations.
                         pointRadius: 5,
                         pointHoverRadius: 10,
                         fill: true,
+                        borderDash: [10, 5], // Dashed line style
                         backgroundColor: gradient1,
                         backgroundColor: createDiagonalPattern('#09f'),
                         parsing: {
