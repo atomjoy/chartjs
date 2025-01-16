@@ -7,5 +7,6 @@ Chart.js line chart example with gradients and animations.
 <img src="https://raw.githubusercontent.com/atomjoy/chartjs/refs/heads/main/chart-js-1.png" width="100%">
 
 ## Links
+- https://www.chartjs.org/docs/latest/
 - https://www.chartjs3.com/docs/chart/getting-started
 - https://www.youtube.com/watch?v=DnjlLbOsPlM
