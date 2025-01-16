@@ -6,7 +6,7 @@ Chart.js line chart example with gradients and animations.
 <img src="https://raw.githubusercontent.com/atomjoy/chartjs/refs/heads/main/chart-js.png" width="100%">
 <img src="https://raw.githubusercontent.com/atomjoy/chartjs/refs/heads/main/chart-js-1.png" width="100%">
 
-## Date time
+## Date time chart
 
 ```html
 <!DOCTYPE html>
